@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All UX/UI design projects and case studiesby Kata Dóra, including UX research, user flows, prototyping and branding. ">
+    <title>Projects - Kata Dóra</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="container">
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Kata Dóra – home" width="64" height="64">
+        </a>
+        <nav aria-label="Main">
+            <a href="index.html#about">ABOUT ME</a>
+            <a href="projects.html" aria-current="page">PROJECTS</a>
+            <a href="index.html#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <main id="main" class="page">
+        <h1 class="page-title">ALL PROJECTS</h1>
+
+        <div class="project-grid">
+            <article class="card">
+                <div class="thumb">
+                    <img class="img-main" src="images/squadramain.webp" srcset="images/squadramain-600.webp 600w, images/squadramain.webp 1200w" sizes="(max-width: 600px) calc(100vw - 86px), (max-width: 900px) 45vw, (max-width: 1600px) 30vw, 440px" alt="Preview of the Squadra website">
+                    <img class="img-hover" src="images/squadra.webp" alt="" loading="lazy" decoding="async">
+                </div>
+                <div class="card-meta">
+                    <span>SPORTS COMMUNITY PLATFORM</span>
+                    <span>2026</span>
+                </div>
+                <h2>01 / SQUADRA</h2>
+                <p>A platform that helps recreational athletes connect, find teammates or workout buddies, organise games and build their local sports communities.</p>
+                <div class="tags">
+                    <span>UX ARCHITECTURE</span>
+                    <span>USER FLOWS</span>
+                    <span>PROTOTYPING</span>
+                </div>
+                <a href="squadra.html" aria-label="Read more about Squadra">READ MORE →</a>
+            </article>
+
+            <article class="card">
+                <div class="thumb">
+                    <img class="img-main" src="images/gaiamain.webp" srcset="images/gaiamain-600.webp 600w, images/gaiamain.webp 1200w" sizes="(max-width: 600px) calc(100vw - 86px), (max-width: 900px) 45vw, (max-width: 1600px) 30vw, 440px" alt="Preview of the redesigned Gaia webshop">
+                    <img class="img-hover" src="images/gaia.webp" alt="" loading="lazy" decoding="async">
+                </div>
+                <div class="card-meta">
+                    <span>WEBSHOP REDESIGN &amp; REBRANDING</span>
+                    <span>2025</span>
+                </div>
+                <h2>02 / GAIA</h2>
+                <p>A redesign of a plant webshop with a new brand identity, clearer navigation, better search and filtering and a simpler way to browse and order online.</p>
+                <div class="tags">
+                    <span>UX / UI DESIGN</span>
+                    <span>BRANDING</span>
+                    <span>DESIGN SYSTEM</span>
+                </div>
+                <a href="gaia.html" aria-label="Read more about Gaia">READ MORE →</a>
+            </article>
+
+            <article class="card">
+                <div class="thumb">
+                    <img class="img-main" src="images/relectromain.webp" srcset="images/relectromain-600.webp 600w, images/relectromain.webp 1200w" sizes="(max-width: 600px) calc(100vw - 86px), (max-width: 900px) 45vw, (max-width: 1600px) 30vw, 440px" alt="Preview of the Relectro smart knee band project">
+                    <img class="img-hover" src="images/relectro.webp" alt="" loading="lazy" decoding="async">
+                </div>
+                <div class="card-meta">
+                    <span>DIGITAL HEALTH STARTUP</span>
+                    <span>2023</span>
+                </div>
+                <h2>03 / RELECTRO</h2>
+                <p>A smart knee band for rehabilitation that uses electrostimulation and motion-tracking sensors to give patients and physiotherapists real-time feedback of movement and measurable results.</p>
+                <div class="tags">
+                    <span>USER RESEARCH</span>
+                    <span>COMPETITOR ANALYSIS</span>
+                    <span>PITCHING</span>
+                </div>
+                <a href="relectro.html" aria-label="Read more about Relectro">READ MORE →</a>
+            </article>
+        </div>
+    </main>
+
+</div>
+
+<footer>
+    <p>© 2026 Kata Dóra. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('img').forEach(img => {
+            const box = img.closest('.hero, .case-hero, .thumb, .about-image') || img;
+            const done = () => box.classList.add('is-loaded');
+            if (img.complete) done();
+            else {
+                img.addEventListener('load', done);
+                img.addEventListener('error', done);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

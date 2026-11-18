@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Squadra – A platform that helps recreational athletes connect, find teammates or workout buddies, organise games and build their local sports communities. UX/UI case study by Kata Dóra.">
+    <title>SQUADRA - Kata Dóra</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="container">
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Kata Dóra – home" width="64" height="64">
+        </a>
+        <nav aria-label="Main">
+            <a href="index.html#about">ABOUT ME</a>
+            <a href="index.html#projects">PROJECTS</a>
+            <a href="index.html#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="case-hero">
+            <img class="case-hero-bg" src="images/squadraproject-2560.webp" srcset="images/squadraproject-1400.webp 1400w, images/squadraproject-1920.webp 1920w, images/squadraproject-2560.webp 2560w" sizes="(max-width: 600px) 750px, (orientation: portrait) 125vw, (max-width: 1600px) 105vw, 100vw" width="2560" height="1440" alt="Squadra website screens" fetchpriority="high">
+            <div class="case-hero-content">
+                <h1>SQUADRA</h1>
+                <p class="case-hero-meta">Sports community platform, 2026</p>
+            </div>
+        </section>
+
+        <div class="page case">
+
+            <section class="case-intro">
+                <p>Squadra is a peer-to-peer social sports platform designed for hobby players to organize and grow their own communities. It simplifies the chaos of group management by centralizing communication, collaborative scheduling and real-time attendance statistics.</p>
+
+                <dl class="case-facts">
+                    <div>
+                        <dt>PROJECT TYPE</dt>
+                        <dd>UI/UX design for a website</dd>
+                    </div>
+                    <div>
+                        <dt>ROLE</dt>
+                        <dd>UX/UI designer</dd>
+                    </div>
+                    <div>
+                        <dt>INDUSTRY</dt>
+                        <dd>Sports &amp; wellbeing</dd>
+                    </div>
+                    <div>
+                        <dt>TOOLS</dt>
+                        <dd>Figma, Figjam</dd>
+                    </div>
+                    <div>
+                        <dt>DURATION</dt>
+                        <dd>February 2026 – April 2026</dd>
+                    </div>
+                    <div>
+                        <dt>OTHER INFO</dt>
+                        <dd>This was my main project in my application portfolio to Interaction design MA.</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section>
+                <h2>THE CHALLENGE</h2>
+                <div class="case-two">
+                    <div>
+                        <p>Finding people to play hobby sports with can be challenging due to the lack of dedicated platforms connecting local players. Sport clubs often require higher skill levels, which can discourage beginners.</p>
+                        <p>Currently, hobby athletes rely on Facebook groups, where communication is disorganized and unreliable. There is no way to filter games by location or intensity, and the lack of accountability often leads to last-minute cancellations, making sports organization stressful and inefficient.</p>
+
+                        <div class="case-stats">
+                            <div>
+                                <strong>55%</strong>
+                                <span>Never exercise or play sports.</span>
+                                <span>In 2024, 55% of Hungarian respondents reported never exercising or playing sports.</span>
+                                <a href="https://index.hu/tudomany/2024/06/20/kutatas-sport-egeszseg-mozgas/" target="_blank" rel="noopener noreferrer" aria-label="Source: Index.hu 2024 (opens in new tab)">Source: Index.hu 2024</a>
+                            </div>
+                            <div>
+                                <strong>63%</strong>
+                                <span>Find it hard to join a sports club.</span>
+                                <span>Only 37% found it easy to join a sports club or group training in their area.</span>
+                                <a href="https://tf.hu/files/docs/hirek/2024/aktiv-eletmod-kutatas-210x148-240613-v5_3.pdf" target="_blank" rel="noopener noreferrer" aria-label="Source: TÁRKI 2024 (opens in new tab)">Source: TÁRKI 2024</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-card case-question">
+                        <span class="case-label">CORE RESEARCH QUESTION</span>
+                        <p>“How might we make participating in hobby sports more accessible, easy, organised, and socially connected?”</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>IDENTIFYING PAIN POINTS</h2>
+                <div class="case-three">
+                    <article class="case-card">
+                        <h3>FOCUS ON CHILDREN/PROS</h3>
+                        <p>There are limited opportunities for adults who want to try a sport for the first time or play at a hobby level, because most organisations focus on pro-level players.</p>
+                        <ul>
+                            <li>TARGET HOBBY PLAYERS</li>
+                            <li>ENABLE THEM TO FILTER BY SKILL, AGE, GENDER</li>
+                        </ul>
+                    </article>
+
+                    <article class="case-card">
+                        <h3>NOISE &amp; ATMOSPHERE</h3>
+                        <p>Information is scattered across Facebook groups, random websites, sports clubs and associations, while established groups can feel closed off or unwelcoming, making it difficult for newcomers to know where to start.</p>
+                        <ul>
+                            <li>AGGREGATING GAMES FROM VARIOUS SOURCES INTO ONE CLEAN INTERFACE</li>
+                            <li>REVIEW PLAYERS, SHOW MUTUAL CONNECTIONS, “BEGINNER FRIENDLY” TAGS</li>
+                            <li>SUPPORTING NETWORKING</li>
+                        </ul>
+                    </article>
+
+                    <article class="case-card">
+                        <h3>DIFFICULT ORGANIZATION</h3>
+                        <p>Difficulty coordinating schedules, booking venues, collecting advance payments and gathering enough participants across different platforms.</p>
+                        <ul>
+                            <li>EASY COMMUNICATION AND SEARCHING FOR VENUES, TRAININGS WITHIN THE PLATFORM</li>
+                            <li>ALL-IN-ONE PLACE INFO</li>
+                            <li>COLD-START PROBLEM</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2>PERSONA</h2>
+                <div class="case-two case-two--persona">
+                    <div class="case-story">
+                        <span class="case-label">USER STORY – ANNA</span>
+                        <p><strong>As a</strong> busy beginner sport enthusiast</p>
+                        <p><strong>I want to</strong> easily find and join local hobby sports groups with people of similar skill levels</p>
+                        <p><strong>so that</strong> I can try out and enjoy low-stakes sports in a stress-free social setting.</p>
+                    </div>
+                    <img class="case-img" src="images/squadraprojectpersona-2000.webp" srcset="images/squadraprojectpersona-800.webp 800w, images/squadraprojectpersona-1200.webp 1200w, images/squadraprojectpersona-1600.webp 1600w, images/squadraprojectpersona-2000.webp 2000w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1600px) 50vw, 790px" width="2000" height="1250" alt="Persona of Anna, a busy beginner sport enthusiast looking for local hobby sports groups at her skill level" loading="lazy" decoding="async">
+                </div>
+            </section>
+
+            <section>
+                <h2>USER FLOW</h2>
+                <img class="case-img" src="images/squadraprojectflow-2800.webp" srcset="images/squadraprojectflow-1000.webp 1000w, images/squadraprojectflow-1800.webp 1800w, images/squadraprojectflow-2800.webp 2800w" sizes="(max-width: 533px) calc(100vw - 48px), (max-width: 1600px) 91vw, 1456px" width="2800" height="835" alt="User flow diagram of the Squadra website" loading="lazy" decoding="async">
+            </section>
+
+            <section>
+                <h2>BRANDING</h2>
+                <img class="case-img" src="images/squadraprojectbrand-2800.webp" srcset="images/squadraprojectbrand-1000.webp 1000w, images/squadraprojectbrand-1800.webp 1800w, images/squadraprojectbrand-2800.webp 2800w" sizes="(max-width: 533px) calc(100vw - 48px), (max-width: 1600px) 91vw, 1456px" width="2800" height="1228" alt="Squadra brand guide with the logo, color palette, typography and UI elements" loading="lazy" decoding="async">
+            </section>
+
+            <section>
+                <h2>HI-FI PROTOTYPES</h2>
+                <div class="case-duo">
+                    <img class="case-img" src="images/squadraprojectmockup1.webp" srcset="images/squadraprojectmockup1-800.webp 800w, images/squadraprojectmockup1-1200.webp 1200w, images/squadraprojectmockup1.webp 1800w" sizes="(max-width: 533px) calc(100vw - 48px), (max-width: 768px) 91vw, (max-width: 1600px) 45vw, 716px" width="1800" height="1013" alt="Hi-fi prototype of Squadra on mobile" loading="lazy" decoding="async">
+                    <img class="case-img" src="images/squadraprojectmockup2.webp" srcset="images/squadraprojectmockup2-800.webp 800w, images/squadraprojectmockup2-1200.webp 1200w, images/squadraprojectmockup2.webp 1800w" sizes="(max-width: 533px) calc(100vw - 48px), (max-width: 768px) 91vw, (max-width: 1600px) 45vw, 716px" width="1800" height="1013" alt="Hi-fi prototype of Squadra on desktop" loading="lazy" decoding="async"> 
+                </div>
+            </section>
+
+            <section>
+                <h2>KEY LEARNINGS &amp; TAKEAWAYS</h2>
+                <div class="case-two">
+                    <blockquote class="case-card">
+                        <span class="case-label">MY RETROSPECTIVE</span>
+                        <p>“The cold-start problem (too few users create little activity, driving newcomers away) turned out to be the biggest challenge when designing such platform. I pivoted my idea to be a website instead of an application in the beginning for this exact problem.”</p>
+                        <div class="case-author">
+                            <strong>Kata</strong>
+                            <span>UX/UI Designer</span>
+                        </div>
+                    </blockquote>
+
+                    <div class="case-takeaways">
+                        <span class="case-label">THREE CORE TAKEAWAYS</span>
+                        <article>
+                            <h3>ACCESSIBILITY OVER/BEFORE DISCOVERY</h3>
+                            <p>Hitting a start-up barrier was removing barriers to entry and to organised communities.</p>
+                        </article>
+                        <article>
+                            <h3>COMMUNITY ORIENTED ENGAGEMENT</h3>
+                            <p>Reliable participation and meaningful connections are essential to sustaining sports communities.</p>
+                        </article>
+                        <article>
+                            <h3>SIMPLICITY ENABLES PARTICIPATION</h3>
+                            <p>Bringing fragmented organisation together can make organising and joining a sport significantly easier.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <h3 class="case-sharpened">WHAT THIS PROJECT SHARPENED</h3>
+                <p class="case-sharpened-text">This project strengthened my ability to design with a problem-solving mindset, not just focusing on aesthetic value. It also helped me practising empathy by designing for users outside my own experience.</p>
+            </section>
+
+            <section class="case-next">
+                <div>
+                    <span class="case-label">NEXT CASE STUDY</span>
+                    <h3>02 / GAIA WEBSHOP REDESIGN &amp; REBRANDING</h3>
+                </div>
+                <a href="gaia.html" class="cta" aria-label="Explore next project: Gaia">EXPLORE NEXT PROJECT →</a>
+            </section>
+
+        </div>
+    </main>
+
+    <section id="contact" class="contact">
+        <h2>LET'S WORK TOGETHER</h2>
+        <p class="contact-copy">Have a project, idea, or opportunity in mind? I'd love to hear about it.</p>
+        <a href="mailto:kata.dora.4646@gmail.com" class="cta">START A CONVERSATION</a>
+
+        <div class="contact-info">
+            <div>
+                <h3>DIRECT INQUIRIES</h3>
+                <a href="mailto:kata.dora.4646@gmail.com">kata.dora.4646@gmail.com</a>
+            </div>
+            <div>
+                <h3>LOCATION &amp; TIMEZONE:</h3>
+                <p>Budapest, Hungary &amp; Remote worldwide</p>
+            </div>
+            <div>
+                <h3>WANT TO SEE MORE?</h3>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/dora-kata" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect width="4" height="12" x="2" y="9"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/lelekprizma" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in new tab)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                        </svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Kata Dóra. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('img').forEach(img => {
+            const box = img.closest('.hero, .case-hero, .thumb, .about-image') || img;
+            const done = () => box.classList.add('is-loaded');
+            if (img.complete) done();
+            else {
+                img.addEventListener('load', done);
+                img.addEventListener('error', done);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
