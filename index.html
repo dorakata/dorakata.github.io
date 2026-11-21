@@ -9,7 +9,6 @@
     <link rel="preload" href="fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="images/background-loop.webp" as="image" fetchpriority="high">
 </head>
 <body>
 
@@ -30,16 +29,14 @@
 
     <main id="main">
 <section class="hero">
-    <img class="bg" src="images/background.webp" alt="" fetchpriority="high">
-    <div class="metro" aria-hidden="true"></div>
+    <img class="bg" src="images/background.webp" srcset="images/background-1280.webp 1280w, images/background-2000.webp 2000w, images/background.webp 2560w" sizes="(max-width: 768px) calc(min(100vh - 56px, 150vw) * 1.78), (orientation: portrait) calc((100vh - 50px) * 1.78), 105vw" alt="" fetchpriority="high">    <div class="metro" aria-hidden="true"></div>
     <button class="metro-toggle" type="button" aria-pressed="false" aria-label="Pause background motion">
         <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
         <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
     </button>
     <div class="title-group">
         <h1>PORTFOLIO</h1>
-    <img class="model" src="images/model.webp" srcset="images/model-850.webp 850w, images/model-1096.webp 1096w, images/model.webp 1462w" sizes="(max-width: 768px) 112vw, 78vh" alt="">    </div>
-    <p class="location">Based in Budapest, Hungary</p>
+    <img class="model" src="images/model.webp" srcset="images/model-850.webp 850w, images/model-1096.webp 1096w, images/model.webp 1462w" sizes="(max-width: 768px) 112vw, 78vh" alt="" fetchpriority="low">    <p class="location">Based in Budapest, Hungary</p>
     <p class="role">UX Designer &amp; Marketer</p>
 </section>
 
