@@ -6,7 +6,10 @@
     <meta name="description" content="Kata Dóra – UX designer and marketer based in Budapest. Portfolio of UX research, user flows, prototyping and branding projects.">
     <title>Kata Dóra - Portfolio</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="images/background-loop.webp" as="image" fetchpriority="high">
 </head>
 <body>
 
@@ -26,14 +29,19 @@
     </header>
 
     <main id="main">
-        <section class="hero">
-            <img class="bg" src="images/background.webp" alt="" fetchpriority="high">
-            <div class="title-group">
-                <h1>PORTFOLIO</h1>
-                <img class="model" src="images/model.webp" srcset="images/model-850.webp 850w, images/model-1096.webp 1096w, images/model.webp 1462w" sizes="(max-width: 768px) 112vw, 78vh" alt="" fetchpriority="high">            </div>
-            <p class="location">Based in Budapest, Hungary</p>
-            <p class="role">UX Designer &amp; Marketer</p>
-        </section>
+<section class="hero">
+    <img class="bg" src="images/background.webp" alt="" fetchpriority="high">
+    <div class="metro" aria-hidden="true"></div>
+    <button class="metro-toggle" type="button" aria-pressed="false" aria-label="Pause background motion">
+        <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+        <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <div class="title-group">
+        <h1>PORTFOLIO</h1>
+    <img class="model" src="images/model.webp" srcset="images/model-850.webp 850w, images/model-1096.webp 1096w, images/model.webp 1462w" sizes="(max-width: 768px) 112vw, 78vh" alt="">    </div>
+    <p class="location">Based in Budapest, Hungary</p>
+    <p class="role">UX Designer &amp; Marketer</p>
+</section>
 
         <section id="about" class="about">
             <div>
@@ -176,6 +184,18 @@
             }
         });
     });
+</script>
+
+<script>
+    const metro = document.querySelector('.metro');
+    const metroToggle = document.querySelector('.metro-toggle');
+
+    if (metro && metroToggle) {
+        metroToggle.addEventListener('click', () => {
+            const paused = metro.classList.toggle('is-paused');
+            metroToggle.setAttribute('aria-pressed', paused);
+        });
+    }
 </script>
 
 </body>
